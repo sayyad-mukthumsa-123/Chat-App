@@ -1,0 +1,170 @@
+ .chat-input-container {
+   display: flex;
+   align-items: center;
+   background-color: white;
+   color: #a7bc5b;
+   padding: 0 0.5rem;
+   gap: 1rem;
+   width: inherit;
+ }
+
+ @media screen and (min-width: 320px) and (max-width: 719px) {
+   .chat-input-container {
+     padding: 0 0.25rem;
+     gap: 0.5rem;
+   }
+ }
+
+ @media screen and (min-width: 720px) and (max-width: 1080px) {
+   .chat-input-container {
+     padding: 0 1rem;
+     gap: 1rem;
+   }
+ }
+
+ .button-container {
+   display: flex;
+   align-items: center;
+   color: #a7bc5b;
+   gap: 1rem;
+ }
+
+ .emoji {
+   position: relative;
+ }
+
+ .emoji svg {
+   font-size: 1.5rem;
+   color: #8da242;
+   cursor: pointer;
+   transition: all 0.3s ease;
+ }
+
+ .emoji-icon.active {
+   color: #2f3b02;
+   transform: scale(1.2);
+ }
+
+ .emoji-hint {
+   color: red;
+   font-size: 0.9rem;
+   margin-bottom: 0.5rem;
+   font-weight: 500;
+   text-align: center;
+   padding: 20px;
+   font-size: larger;
+ }
+
+
+ .emoji-picker-wrapper {
+   position: absolute;
+   bottom: 50px;
+   background-color: white;
+   box-shadow: 0 5px 10px #9a86f3;
+   border-color: #9a86f3;
+   z-index: 10;
+ }
+
+ .emoji-picker-react {
+   background-color: white;
+   color: #a7bc5b;
+   border-color: #9a86f3;
+ }
+
+ .emoji-picker-react .emoji-scroll-wrapper::-webkit-scrollbar {
+   background-color: white;
+   width: 5px;
+ }
+
+ .emoji-picker-react .emoji-scroll-wrapper::-webkit-scrollbar-thumb {
+   background-color: #a7bc5b;
+ }
+
+ .emoji-picker-react .emoji-categories button {
+   filter: contrast(0);
+ }
+
+ .emoji-picker-react .emoji-search {
+   background-color: transparent;
+   border-color: #9a86f3;
+ }
+
+ .emoji-picker-react .emoji-group:before {
+   background-color: white;
+   color: #a7bc5b;
+ }
+
+ .chat-input-container .input-container {
+   gap: 1rem;
+   width: 100%;
+   background-color: white;
+   color: #a7bc5b;
+   padding: 5px;
+   border-radius: 1rem;
+ }
+
+ .chat-input {
+   width: 100%;
+   display: flex;
+ }
+
+ .input-container input {
+   width: 100%;
+   flex: 1;
+   height: 40px;
+   background-color: transparent;
+   color: black;
+   padding-left: 1rem;
+   font-size: 1rem;
+ }
+
+ .input-container input::selection {
+   background-color: white;
+   color: #a7bc5b;
+ }
+
+ .input-container input:focus {
+   outline: none;
+ }
+
+ #send-btn {
+   margin-left: 20px;
+   padding: 0.5rem 1.5rem;
+   border-radius: 1rem;
+   background-color: #8da242;
+   border: none;
+   cursor: pointer;
+   transition: all 0.3s ease;
+ }
+
+ #send-btn:hover {
+   background-color: #2f3b02;
+   transform: scale(1.2);
+   box-shadow: 0px 0px 10px #2f3b02;
+ }
+
+ #send-btn svg {
+   font-size: 1.5rem;
+   color: white;
+ }
+
+ @media screen and (min-width: 320px) and (max-width: 719px) {
+   #send-btn {
+     padding: 0.3rem 1rem;
+     margin-left: 10px;
+   }
+
+   #send-btn svg {
+     font-size: 1rem;
+   }
+ }
+
+ @media screen and (min-width: 720px) and (max-width: 1080px) {
+   #send-btn {
+     padding: 0.3rem 1rem;
+   }
+
+   #send-btn svg {
+     font-size: 1rem;
+   }
+ }

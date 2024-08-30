@@ -1,0 +1,63 @@
+   .logout-button {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 0.5rem;
+     border-radius: 0.5rem;
+     background-color: #8da242;
+     border: none;
+     cursor: pointer;
+     transition: background-color 0.3s ease, transform 0.3s ease;
+   }
+
+   .logout-button:hover {
+     background-color: #7a8b33;
+     transform: scale(1.05);
+   }
+
+   .logout-button svg {
+     font-size: 1.3rem;
+     color: #ebe7ff;
+   }
+
+   @media screen and (max-width: 1024px) {
+     .logout-button {
+       padding: 0.6rem;
+     }
+
+     .logout-button svg {
+       font-size: 1.2rem;
+     }
+   }
+
+   @media screen and (max-width: 768px) {
+     .logout-button {
+       padding: 0.5rem;
+     }
+
+     .logout-button svg {
+       font-size: 1.1rem;
+     }
+   }
+
+   @media screen and (max-width: 480px) {
+     .logout-button {
+       padding: 0.4rem;
+     }
+
+     .logout-button svg {
+       font-size: 1rem;
+     }
+   }
+
+   @media screen and (max-width: 320px) {
+     .logout-button {
+       padding: 0.3rem;
+       width: 40px;
+       height: 40px;
+     }
+
+     .logout-button svg {
+       font-size: 0.9rem;
+     }
+   }
